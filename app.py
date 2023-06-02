@@ -6,8 +6,6 @@ from flask_cors import CORS
 from flask import request
 from time import time
 import json
-from gpt.api import getResponse
-from whatsapp.api import send_message
 app = Flask(__name__)
 cors = CORS(app)
 with open('gpt/data/products.csv','r') as h:
